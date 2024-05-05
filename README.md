@@ -56,14 +56,16 @@ Enitity Framework:
         optionsBuilder.UseSqlServer("Data Source=SCORPIGGYLAPTOP\\SQLEXPRESS;Initial Catalog=stagebureau;Integrated Security=True;TrustServerCertificate=True;");
     }
 
-Als je SQLExpress is het belangrijk dat je de TrustServerCertificate erbij zet en op true zet, anders heb je geen rechten op de database en kan hij geen connectie maken. Dus vergeet die niet! 
+Als je SQLExpress is het belangrijk dat je de TrustServerCertificate erbij zet en op true zet, anders heb je geen rechten op de database en kan hij geen connectie maken. Dus vergeet die niet!
 
 LINQ to SQL:
     Het beste is om LINQ to SQL te vermijden, want dit is outdated. Dit wordt al sinds .net 3.5 niet meer ondersteund. Dus als je een core app wilt maken, kan je beter ef gebruiken, want LINQ to SQL gaat niet werken. Maar als je .net wilt gebruiken, wat alleen gebruikt wordt voor Legacy applications, kan je LINQ to SQL nog wel gebruiken. Als je de tabellen wilt gebruiken in je code, maak je een dbml file aan. Daarna verbindt je de juiste database vanuit de server explorer die te vinden is via het view knopje(in visual studio). Daarna sleep je de tabellen in het dbml class en daarna kan je de tabellen gebruiken als objecten.
 
 # Conventions
 
-Als je de C# conventies niet meer weet, kan je het vinden in deze link: https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md 
+Als je de C# conventies niet meer weet, kan je het vinden in deze link: https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md
+
+Verder is het ook belangrijk om de coventie DRY(don't repeat yourself) aan te houden. Zo blijft de code beter leesbaar en is het makkelijker te onderhouden. Dit is niet alleen in C# en native te maken. Dit is een universele conventie in het programmeren en software engineering.
 
 Je mag natuurlijk je eigen conventies bedenken, maar toch raad ik aan om de universele conventies van C# te gebruiken. Die zijn vaak bekend bij andere programmeurs en is de kans dat de conventies toegepast worden groter.
 
