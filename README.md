@@ -83,3 +83,8 @@ Ook is het gebruik van summaries heel handig. Met een summary kan je extra infor
 - En als laatste hover je over het item van je de param voor gemaakt hebt en kan je zien dat je tekst die je hebt ingevuld er staat
 
 Mijn tip is om je summary pas aan te maken als je klaar bent met dat bestand, wordt dan maak de params automatisch aan en hoe je alleen maar nog de extra informatie in te vullen.
+
+# Other repositories
+
+BarrocItens: https://github.com/Smydro/Barroc-Intens
+Landbouwmonitor: https://github.com/lucianoKa/landbouwkasMonitor
