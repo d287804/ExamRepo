@@ -1,0 +1,18 @@
+        private void dgvData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (dgvData.SelectedValue != null)
+            {
+                if (dgvData.SelectedValue.GetType() == typeof(User))
+                {
+                    User user = (User)dgvData.SelectedValue;
+
+                    txtUsername.Text = user.Name;
+                    txtEmail.Text = user.Email;
+                }
+            }
+        }
+
+        private void dgvData_Loaded(object sender, RoutedEventArgs e)
+        {
+            dgvData.ItemsSource = SQLHelper.GetUsers();
+        }
