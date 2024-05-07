@@ -16,3 +16,12 @@
         {
             dgvData.ItemsSource = SQLHelper.GetUsers();
         }
+
+dgvData.SelectionMode = DataGridSelectionMode.Single;
+
+public static  List<User> GetUsers()
+{
+    AppDbContext ctx = new AppDbContext();
+    List<User> users = ctx.users.ToList();
+    return users;
+}
